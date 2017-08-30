@@ -1,0 +1,67 @@
+html {
+background-image: url("http://cdn.wallpapersafari.com/50/40/d5KA8j.jpg");
+}
+
+body {
+  font-family: 'Abril Fatface', cursive;
+  
+}
+
+.box {
+  height:500px;
+  text-align: center;
+  border: 1px solid;
+ 
+}
+.hidden {
+  display: none;
+}
+#intro {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  padding-top: 100px;
+  font-size: 150%;
+}
+#bookCover img {
+  max-width: 200px;
+}
+#progressCount {
+  float: left;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+.headbox {
+  height:100px;
+  text-align: center;
+  border: 1px solid;
+ 
+}
+#correctAnswerCount{
+  float: right;
+  padding-right: 10px;
+  margin-bottom: 5px;
+}
+
+#quizTitle{
+  font-size:150%;
+}
+#scoreScreen{
+  padding-top:20%;
+  margin:auto;
+  text-align: center;
+}
+#bookTitle{
+  border:1px solid;
+  margin-left:10px;
+  margin-right: 10px;
+  font-size:110%;
+ 
+}
+#bookDescription{
+  border:1px solid;
+  margin-left:10px;
+  margin-right: 10px;
+  font-size:110%;
+
+}

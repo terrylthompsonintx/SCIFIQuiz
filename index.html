@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sci Fi Quiz App</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link rel="stylesheet" href="rows.css" />
+  </head>
+  <body>
+    
+    <div id='main' class='hidden' role='main'>
+      <div class="col-12">
+      <div class="headbox" id='header'>
+        <p id='quizTitle'>Classic Science Fiction Quiz</p>
+        <div id='correctAnswerCount'>Correct Answers: 0</div>
+         <div id='progressCount'></div>
+      </div>
+    </div>
+      <div class="col-4">
+        <div class="box" id='questionBox'>
+          <p id='titleLabel'>Book Title</p>
+          <p id='bookTitle'>Book Title</p>
+          <p id='descriptionLabel'>Book Synopsis</p>
+          <p id='bookDescription'>Description</p>
+         
+        </div>
+        
+    </div>
+    
+    <div class="col-4">
+      <div class="box" id='answerBox'>
+        <p>  Which of the authors below wrote this book?</p>
+        <form id='answerForm' >
+          <fieldset>
+          <input type="radio" name="author" id='answer1' value="99"  required checked="checked" ><p id='author1'></p> 
+          <input type="radio" name="author" id='answer2' value="99" required><p id='author2'></p> 
+          <input type="radio" name="author" id='answer3' value="99" required><p id='author3'></p> 
+          <input type="radio" name="author" id='answer4' value="99" required><p id='author4'></p> 
+        </fieldset>
+          <button id='answerButton' type='submit'>Submit Answer</button>
+        </form>
+      </div>
+  </div>
+  
+  <div class="col-4">
+    <div class="box" id='resultsBox'>
+      <div id='answerEval' class='hidden'>
+        <div id='scoreBox'></div>
+        
+          <div id='bookCover'></div>
+          <button id=continueButton type='submit'>Continue Quiz</button>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+        <form id='intro'>
+          <p>This quiz tests your knowledge of who wrote some of the most important science fiction books in history.</p>
+        <button id='startButton' type='submit' >Start Quiz</button>  
+        </form>
+    
+  <div id='scoreScreen' class='hidden'>
+    <p id='userScore'></p>
+     
+    <button id="playAgain" type='submit'>Play Again?</button>
+  </div>
+    
+    <script src="data.js"></script>  
+    <script src="index.js"></script>
+  </body>
+ 
+</html>
